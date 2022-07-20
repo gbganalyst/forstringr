@@ -13,45 +13,75 @@ manipulation packages such as `dplyr` and `tidyr`. Just like in the
 
 ## Installation
 
-You can install the development version of forstringr from
+You can install the development version of `forstringr` from
 [GitHub](https://github.com/) with
 
 ``` r
 devtools::install_github("gbganalyst/forstringr")
 ```
 
-## Example
+## `str_left()`
 
-This is a basic example which shows you how to solve a common problem:
+Given a character vector, `str_left()` returns the left side of a
+string. For examples:
 
 ``` r
 library(forstringr)
-## basic example code
+
+str_left("Nigeria")
+#> [1] "N"
+
+str_left("Nigeria", n = 3)
+#> [1] "Nig"
+
+str_left(c("Female", "Male", "Male", "Female"))
+#> [1] "F" "M" "M" "F"
 ```
 
-What is special about using `README.Rmd` instead of just `README.md`?
-You can include R chunks like so:
+## `str_right()`
+
+Given a character vector, `str_right()` returns the right side of a
+string. For examples:
 
 ``` r
-summary(cars)
-#>      speed           dist       
-#>  Min.   : 4.0   Min.   :  2.00  
-#>  1st Qu.:12.0   1st Qu.: 26.00  
-#>  Median :15.0   Median : 36.00  
-#>  Mean   :15.4   Mean   : 42.98  
-#>  3rd Qu.:19.0   3rd Qu.: 56.00  
-#>  Max.   :25.0   Max.   :120.00
+
+str_right("July 20, 2022", 4)
+#> [1] "2022"
+
+str_right("Sale Price", n = 5)
+#> [1] "Price"
 ```
 
-You’ll still need to render `README.Rmd` regularly, to keep `README.md`
-up-to-date. `devtools::build_readme()` is handy for this. You could also
-use GitHub Actions to re-render `README.Rmd` every time you push. An
-example workflow can be found here:
-<https://github.com/r-lib/actions/tree/v1/examples>.
+## `str_mid()`
 
-You can also embed plots, for example:
+Just like in the Microsoft Excel, the `str_mid()`returns a specific
+number of characters from a text string, starting at the position you
+specify, based on the number of characters you specify.
 
-<img src="man/figures/README-pressure-1.png" width="100%" />
+``` r
+str_mid("Super Eagle", 7, 5)
+#> [1] "Eagle"
 
-In that case, don’t forget to commit and push the resulting figure
-files, so they display on GitHub and CRAN.
+str_mid("Oyo Ibadan", 5, 6)
+#> [1] "Ibadan"
+```
+
+## `str_split_extract()`
+
+If you want to split up a string into pieces and extract the results
+using a specific index position, then, you will use
+`str_split_extract()`. You can interpret it as interpret it as follows:
+
+Given a character string, `S`, extract the element at a given position,
+`k`, from the result of splitting `S` by a given pattern, `m`. For
+example:
+
+``` r
+top_10_richest_nig <- c("Aliko Dangote", "Mike Adenuga ", "Femi Otedola", "Arthur Eze", "Abdulsamad Rabiu", "Cletus Ibeto", "Orji Uzor Kalu", "ABC Orjiakor", "Jimoh Ibrahim", "Tony Elumelu")
+
+first_name <- str_split_extract(top_10_richest_nig, " ", 1)
+
+first_name
+#>  [1] "Aliko"      "Mike"       "Femi"       "Arthur"     "Abdulsamad"
+#>  [6] "Cletus"     "Orji"       "ABC"        "Jimoh"      "Tony"
+```
