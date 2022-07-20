@@ -6,10 +6,10 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of `forstringr` is to enable complex string manipulation in R
-possible. The package combines the power of `stringr`, and other
-manipulation packages such as `dplyr` and `tidyr`. Just like in the
-`stringr` package, every function in `forstringr` begins with `str_`.
+The goal of **forstringr** is to enable complex string manipulation in
+R. The package combines the power of stringr with other manipulation
+packages such as dplyr and tidyr. Just like in the stringr package,
+every function in forstringr begins with `str_`.
 
 ## Installation
 
@@ -54,9 +54,9 @@ str_right("Sale Price", n = 5)
 
 ## `str_mid()`
 
-Just like in the Microsoft Excel, the `str_mid()`returns a specific
-number of characters from a text string, starting at the position you
-specify, based on the number of characters you specify.
+Like in Microsoft Excel, the `str_mid()`returns a specific number of
+characters from a text string, starting at the position you specify,
+based on the number of characters you select.
 
 ``` r
 str_mid("Super Eagle", 7, 5)
