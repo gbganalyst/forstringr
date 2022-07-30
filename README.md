@@ -17,6 +17,10 @@ You can install the development version of `forstringr` from
 [GitHub](https://github.com/) with
 
 ``` r
+if(!require("devtools")){
+ install.packages("devtools")
+}
+
 devtools::install_github("gbganalyst/forstringr")
 ```
 

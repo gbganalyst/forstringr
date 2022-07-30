@@ -1,19 +1,28 @@
 Package: forstringr
 Title: A string manipulation package that extends basic functionalities of stringr
 Version: 0.0.0.9000
-Authors@R: 
-    person("Ezekiel", "Ogundepo", , "gbganalyst@gmail.com", role = c("aut", "cre"),
-           comment = c(ORCID = "0000-0003-3974-2733"))
+Authors@R: c(
+    person("Ezekiel", "Ogundepo", , email = "gbganalyst@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-3974-2733")),
+    person("Olubukunola", "Oyedele", , email = "olubukunola.oyedele@54gene.com", role = c("aut")))
+Maintainer: Ezekiel Ogundepo <gbganalyst@gmail.com>
 Description: Convenience functions to make some common tasks with string
     manipulation a bit easier.
 License: MIT + file LICENSE
 Encoding: UTF-8
+URL: https://github.com/gbganalyst/forstringr
+BugReports: https://github.com/gbganalyst/forstringr/issues
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.0
 Suggests: 
     knitr,
-    rmarkdown
+    rmarkdown,
+    testthat (>= 3.0.0)
 VignetteBuilder: knitr
 Imports: 
     dplyr,
     stringr
+Config/testthat/edition: 3
+Depends: 
+    R (>= 2.10)
+LazyData: true
