@@ -7,7 +7,6 @@
 #' @param position Index position to return from the character vector
 #' @return A character vector
 #' @export
-#' @import dplyr stringr
 #' @author Ezekiel Ogundepo (gbganalyst@@gmail.com)
 #' @examples
 #' code <- c("HS-IB-EDE", "OG-OYO-CAS-0121", "NY-ILR-NIG-036")

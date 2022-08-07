@@ -81,11 +81,60 @@ Given a character string, `S`, extract the element at a given position,
 example:
 
 ``` r
-top_10_richest_nig <- c("Aliko Dangote", "Mike Adenuga ", "Femi Otedola", "Arthur Eze", "Abdulsamad Rabiu", "Cletus Ibeto", "Orji Uzor Kalu", "ABC Orjiakor", "Jimoh Ibrahim", "Tony Elumelu")
+top_10_richest_nig <- c("Aliko Dangote", "Mike Adenuga", "Femi Otedola", "Arthur Eze", "Abdulsamad Rabiu", "Cletus Ibeto", "Orji Uzor Kalu", "ABC Orjiakor", "Jimoh Ibrahim", "Tony Elumelu")
 
 first_name <- str_split_extract(top_10_richest_nig, " ", 1)
 
 first_name
 #>  [1] "Aliko"      "Mike"       "Femi"       "Arthur"     "Abdulsamad"
 #>  [6] "Cletus"     "Orji"       "ABC"        "Jimoh"      "Tony"
+```
+
+## `str_rm_whitespace_df()`
+
+Extra spaces are accidentally entered when working with survey data, and
+problems can arise when evaluating such data because of extra spaces.
+The function str_rm_whitespace_df() eliminates your data frame
+unnecessary leading, trailing, or other whitespaces.
+
+``` r
+richest_in_nigeria
+#> # A tibble: 10 × 5
+#>     Rank Name                   `Net worth`         Age `Source of Wealth`      
+#>    <dbl> <chr>                  <chr>             <dbl> <chr>                   
+#>  1     1 " Aliko Dangote"       "$14 Billion"        64 "  Cement and Sugar "   
+#>  2     2 "Mike Adenuga"         "$7.9  Billion "     68 "Telecommunication,    …
+#>  3     3 "Femi   Otedola"       "$5.9   Billion"     59 "Oil  and Gas"          
+#>  4     4 " Arthur Eze"          "$5 Billion"         73 "Oil and Gas"           
+#>  5     5 "Abdulsamad     Rabiu" "$3.7 Billion"       61 "Cement   and Sugar"    
+#>  6     6 " Cletus Ibeto "       " $3.5 Billion"      69 "Automobile, Real Estat…
+#>  7     7 "Orji Uzor Kalu"       "$3.2 Billion"       61 "Furniture,    Publishi…
+#>  8     8 "ABC Orjiakor "        "  $1.2 Billion"     63 "Oil and Gas"           
+#>  9     9 "  Jimoh Ibrahim"      "$1 Billion "        54 "Insurance, Oil and Gas…
+#> 10    10 "Tony   Elumelu"       "$900    Million"    58 "  Banking  "
+
+str_rm_whitespace_df(richest_in_nigeria)
+#> Warning: Predicate functions must be wrapped in `where()`.
+#> 
+#>   # Bad
+#>   data %>% select(is.character)
+#> 
+#>   # Good
+#>   data %>% select(where(is.character))
+#> 
+#> ℹ Please update your code.
+#> This message is displayed once per session.
+#> # A tibble: 10 × 5
+#>     Rank Name             `Net worth`    Age `Source of Wealth`                 
+#>    <dbl> <chr>            <chr>        <dbl> <chr>                              
+#>  1     1 Aliko Dangote    $14 Billion     64 Cement and Sugar                   
+#>  2     2 Mike Adenuga     $7.9 Billion    68 Telecommunication, Oil, and Gas    
+#>  3     3 Femi Otedola     $5.9 Billion    59 Oil and Gas                        
+#>  4     4 Arthur Eze       $5 Billion      73 Oil and Gas                        
+#>  5     5 Abdulsamad Rabiu $3.7 Billion    61 Cement and Sugar                   
+#>  6     6 Cletus Ibeto     $3.5 Billion    69 Automobile, Real Estate            
+#>  7     7 Orji Uzor Kalu   $3.2 Billion    61 Furniture, Publishing              
+#>  8     8 ABC Orjiakor     $1.2 Billion    63 Oil and Gas                        
+#>  9     9 Jimoh Ibrahim    $1 Billion      54 Insurance, Oil and Gas, Real Estate
+#> 10    10 Tony Elumelu     $900 Million    58 Banking
 ```

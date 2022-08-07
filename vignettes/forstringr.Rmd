@@ -1,8 +1,8 @@
 ---
-title: "forstringr tutorial"
+title: "Manipulating string with forstringr package"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{forstringr_tutorial}
+  %\VignetteIndexEntry{Manipulating string with forstringr package}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -13,8 +13,6 @@ knitr::opts_chunk$set(
   comment = "#>"
 )
 ```
-
-# The `forstringr` package
 
 The goal of **forstringr** is to enable complex string manipulation in R. The package combines the power of stringr with other manipulation packages such as dplyr and tidyr. Just like in the stringr package, every function in forstringr begins with `str_`.
 
