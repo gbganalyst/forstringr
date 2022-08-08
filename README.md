@@ -94,8 +94,8 @@ first_name
 
 Extra spaces are accidentally entered when working with survey data, and
 problems can arise when evaluating such data because of extra spaces.
-The function str_rm_whitespace_df() eliminates your data frame
-unnecessary leading, trailing, or other whitespaces.
+Therefore, the function `str_rm_whitespace_df()` eliminates your data
+frame unnecessary leading, trailing, or other whitespaces.
 
 ``` r
 richest_in_nigeria
@@ -114,16 +114,6 @@ richest_in_nigeria
 #> 10    10 "Tony   Elumelu"       "$900    Million"    58 "  Banking  "
 
 str_rm_whitespace_df(richest_in_nigeria)
-#> Warning: Predicate functions must be wrapped in `where()`.
-#> 
-#>   # Bad
-#>   data %>% select(is.character)
-#> 
-#>   # Good
-#>   data %>% select(where(is.character))
-#> 
-#> ℹ Please update your code.
-#> This message is displayed once per session.
 #> # A tibble: 10 × 5
 #>     Rank Name             `Net worth`    Age `Source of Wealth`                 
 #>    <dbl> <chr>            <chr>        <dbl> <chr>                              

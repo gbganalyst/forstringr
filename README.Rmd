@@ -85,7 +85,7 @@ first_name
 
 ## `str_rm_whitespace_df()`
 
-Extra spaces are accidentally entered when working with survey data, and problems can arise when evaluating such data because of extra spaces. The function str_rm_whitespace_df() eliminates your data frame unnecessary leading, trailing, or other whitespaces.
+Extra spaces are accidentally entered when working with survey data, and problems can arise when evaluating such data because of extra spaces. Therefore, the function `str_rm_whitespace_df()` eliminates your data frame unnecessary leading, trailing, or other whitespaces.
 
 ```{r example5}
 richest_in_nigeria

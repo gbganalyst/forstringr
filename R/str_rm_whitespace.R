@@ -15,7 +15,7 @@
 #' str_rm_whitespace_df(richest_in_nigeria)
 #'
 str_rm_whitespace_df <- function(df) {
-  df %>% mutate(across(is.character, stringr::str_squish))
+  df %>% mutate(across(tidyselect::vars_select_helpers$where(is.character), stringr::str_squish))
 }
 
 
