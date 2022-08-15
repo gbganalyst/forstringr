@@ -4,7 +4,7 @@ Version: 0.0.0.9000
 Authors@R: c(
     person("Ezekiel", "Ogundepo", , email = "gbganalyst@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0003-3974-2733")),
-    person("Olubukunola", "Oyedele", , email = "olubukunola.oyedele@54gene.com", role = c("ctb"))),
+    person("Olubukunola", "Oyedele", , email = "olubukunola.oyedele@54gene.com", role = c("ctb")),
     person("Fatimo", "Adebanjo", , email = "adebanjofatimo2000@gmail.com", role = c("ctb")))
 Maintainer: Ezekiel Ogundepo <gbganalyst@gmail.com>
 Description: Convenience functions to make some common tasks with string

@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# forstringr
+# forstringr <a><img src='man/figures/logo.png' align="right" height="138.5" /></a>
 
 <!-- badges: start -->
 <!-- badges: end -->
@@ -98,6 +98,8 @@ Therefore, the function `str_rm_whitespace_df()` eliminates your data
 frame unnecessary leading, trailing, or other whitespaces.
 
 ``` r
+# A dataframe with whitespaces
+
 richest_in_nigeria
 #> # A tibble: 10 × 5
 #>     Rank Name                   `Net worth`         Age `Source of Wealth`      
@@ -112,6 +114,10 @@ richest_in_nigeria
 #>  8     8 "ABC Orjiakor "        "  $1.2 Billion"     63 "Oil and Gas"           
 #>  9     9 "  Jimoh Ibrahim"      "$1 Billion "        54 "Insurance, Oil and Gas…
 #> 10    10 "Tony   Elumelu"       "$900    Million"    58 "  Banking  "
+```
+
+``` r
+# A dataframe with no whitespaces
 
 str_rm_whitespace_df(richest_in_nigeria)
 #> # A tibble: 10 × 5

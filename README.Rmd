@@ -15,7 +15,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# forstringr
+# forstringr <a><img src='man/figures/logo.png' align="right" height="138.5" /></a>
 
 <!-- badges: start -->
 <!-- badges: end -->
@@ -87,8 +87,13 @@ first_name
 
 Extra spaces are accidentally entered when working with survey data, and problems can arise when evaluating such data because of extra spaces. Therefore, the function `str_rm_whitespace_df()` eliminates your data frame unnecessary leading, trailing, or other whitespaces.
 
-```{r example5}
+```{r example5a}
+# A dataframe with whitespaces
+
 richest_in_nigeria
+```
+```{r example5b}
+# A dataframe with no whitespaces
 
 str_rm_whitespace_df(richest_in_nigeria)
 ```
