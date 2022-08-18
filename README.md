@@ -8,8 +8,8 @@
 
 The goal of **forstringr** is to enable complex string manipulation in
 R. The package combines the power of stringr with other manipulation
-packages such as dplyr and tidyr. Just like in the stringr package,
-every function in forstringr begins with `str_`.
+packages such as dplyr and tidyr. Just like in the stringr package, most
+functions in `forstringr` begins with `str_`.
 
 ## Installation
 
@@ -24,13 +24,28 @@ if(!require("devtools")){
 devtools::install_github("gbganalyst/forstringr")
 ```
 
+## `length_omit_na()`
+
+`length_omitna()` counts only non-missing elements of a vector.
+
+``` r
+library(forstringr)
+
+ethnicity <- c("Hausa", NA, "Yoruba", "Ijaw", "Igbo", NA, "Ibibio", "Tiv", "Fulani", "Kanuri", "Others")
+
+length(ethnicity) # Count all the observations, including the NAs.
+#> [1] 11
+
+length_omit_na(ethnicity) 
+#> [1] 9
+```
+
 ## `str_left()`
 
 Given a character vector, `str_left()` returns the left side of a
 string. For examples:
 
 ``` r
-library(forstringr)
 
 str_left("Nigeria")
 #> [1] "N"

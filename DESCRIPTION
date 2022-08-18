@@ -1,6 +1,6 @@
 Package: forstringr
 Title: A string manipulation package that extends basic functionalities of stringr
-Version: 0.0.0.9000
+Version: 0.0.1
 Authors@R: c(
     person("Ezekiel", "Ogundepo", , email = "gbganalyst@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0003-3974-2733")),

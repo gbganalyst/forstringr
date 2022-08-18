@@ -16,3 +16,7 @@ richest_in_nigeria <- tibble::tribble(
 
 
 usethis::use_data(richest_in_nigeria, overwrite = TRUE)
+
+
+
+
