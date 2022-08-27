@@ -21,6 +21,13 @@ str_remove_vec <- function(string, patterns) {
   str_remove_all(string = string, pattern = regex_pattern)
 }
 
+# comorbidity <- c("[kidney disease]", "[neuropathy]", NA, "[sexual dysfunction]",
+#                  "[hypertension]", "[hypertension]", NA, "[hypertension]",
+#                  "[hypertension]", "[retinopathy]",
+#                  "[heart disease/chest pain/ecg abnormalities/echo abnormalities]",
+#                  "[sexual dysfunction]", NA, "[hypertension:]",
+#                  "[hypertension:null]")
+
 # str_remove_vec(comorbidity, c("[", "]", ":"))
 #
 # str_remove_vec(comorbidity, c("[", "]", ":"))
