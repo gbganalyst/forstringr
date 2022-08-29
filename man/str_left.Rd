@@ -27,6 +27,3 @@ str_left(c("Female", "Male", "Male", "Female"))
 \seealso{
 \code{\link[=str_right]{str_right()}} which extracts characters from the right and \code{\link[=str_mid]{str_mid()}} which returns a segment of character strings.
 }
-\author{
-Ezekiel Ogundepo (gbganalyst@gmail.com)
-}

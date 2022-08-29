@@ -9,8 +9,6 @@
 #' @seealso
 #' [str_left()] which extracts characters from the left and [str_right()] which extracts characters from the right.
 #'
-#' @author Ezekiel Ogundepo (gbganalyst@@gmail.com)
-#'
 #' @export
 #'
 #' @examples

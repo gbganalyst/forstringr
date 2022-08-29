@@ -28,6 +28,3 @@ str_mid("Oyo Ibadan", 5, 6)
 \seealso{
 \code{\link[=str_left]{str_left()}} which extracts characters from the left and \code{\link[=str_right]{str_right()}} which extracts characters from the right.
 }
-\author{
-Ezekiel Ogundepo (gbganalyst@gmail.com)
-}

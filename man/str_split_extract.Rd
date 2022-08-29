@@ -11,10 +11,10 @@ str_split_extract(string, pattern, position)
 
 \item{pattern}{Pattern to look for. This may also contain regular expression.}
 
-\item{position}{Index position to return from the character vector}
+\item{position}{Index position to return from the character vector.}
 }
 \value{
-A character vector
+A character vector.
 }
 \description{
 Split up a string into pieces and extract the results using a specific index position. Mathematically, you can interpret it as follows:
@@ -28,7 +28,4 @@ str_split_extract(code, "-", 1)
 
 str_split_extract(code, "-", 4)
 
-}
-\author{
-Ezekiel Ogundepo (gbganalyst@gmail.com)
 }

@@ -9,8 +9,6 @@
 #' @seealso
 #' [str_left()] which extracts characters from the left and [str_mid()] which returns a segment of character strings.
 #'
-#' @author Ezekiel Ogundepo (gbganalyst@@gmail.com)
-#'
 #' @export
 #'
 #' @examples
