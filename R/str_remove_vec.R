@@ -18,7 +18,7 @@ str_remove_vec <- function(string, patterns) {
   # e.g c('$', '%') = '\\$|%'
   regex_pattern <- paste0(patterns, collapse = "|")
 
-  str_remove_all(string = string, pattern = regex_pattern)
+  stringr::str_remove_all(string = string, pattern = regex_pattern)
 }
 
 # comorbidity <- c("[kidney disease]", "[neuropathy]", NA, "[sexual dysfunction]",
