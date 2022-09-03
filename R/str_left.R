@@ -11,8 +11,6 @@
 #'
 #' [str_right()] which extracts characters from the right and [str_mid()] which returns a segment of character strings.
 #'
-#' @author Ezekiel Ogundepo (gbganalyst@@gmail.com)
-#'
 #' @export
 #'
 #' @examples

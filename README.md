@@ -6,10 +6,14 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of **forstringr** is to enable complex string manipulation in
-R. The package combines the power of stringr with other manipulation
-packages such as dplyr and tidyr. Just like in the stringr package, most
-functions in `forstringr` begins with `str_`.
+The string (or character) data type typically requires more manipulation
+to be helpful for data analysts. Thus, there is a need for a robust
+package that is up to the task. **forstringr** is a new package built on
+top of stringr to execute various string manipulations in R programming.
+The main aim of forstringr is to simplify string manipulation for R
+beginners. This package combines its power with the adaptability of
+other manipulation tools such as tidyr and dplyr. Like in the stringr
+package, most functions in `forstringr` begin with `str_`.
 
 ## Installation
 
@@ -103,6 +107,23 @@ first_name <- str_split_extract(top_10_richest_nig, " ", 1)
 first_name
 #>  [1] "Aliko"      "Mike"       "Femi"       "Arthur"     "Abdulsamad"
 #>  [6] "Cletus"     "Orji"       "ABC"        "Jimoh"      "Tony"
+```
+
+## `str_extract_part()`
+
+Extract strings before or after a given pattern. For example:
+
+``` r
+first_name <- str_extract_part(top_10_richest_nig, before = TRUE, pattern =  " ")
+
+first_name
+#>  [1] "Aliko"      "Mike"       "Femi"       "Arthur"     "Abdulsamad"
+#>  [6] "Cletus"     "Orji Uzor"  "ABC"        "Jimoh"      "Tony"
+
+revenue <- c("$159", "$587", "$891", "$207", "$793")
+
+str_extract_part(revenue, before = FALSE, pattern = "$")
+#> [1] "159" "587" "891" "207" "793"
 ```
 
 ## `str_rm_whitespace_df()`

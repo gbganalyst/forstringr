@@ -2,7 +2,7 @@
 #'
 #' A dataset containing the list of top ten billionaires in Nigeria.
 #'
-#' @format A data frame with 10 rows and 5 variables:
+#' @format A data frame with \code{10} rows and \code{5} variables:
 #' \describe{
 #'   \item{Rank}{rank from 1 to 10}
 #'   \item{Name}{full name of the billionaires}

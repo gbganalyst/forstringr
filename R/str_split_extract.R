@@ -4,10 +4,9 @@
 #' Given a character string, \code{S}, extract the element at a given position, \code{k}, from the result of splitting \code{S} by a given pattern, \code{m}.
 #' @param string Input vector. Either a character vector, or something coercible to one.
 #' @param pattern Pattern to look for. This may also contain regular expression.
-#' @param position Index position to return from the character vector
-#' @return A character vector
+#' @param position Index position to return from the character vector.
+#' @return A character vector.
 #' @export
-#' @author Ezekiel Ogundepo (gbganalyst@@gmail.com)
 #' @examples
 #' code <- c("HS-IB-EDE", "OG-OYO-CAS-0121", "NY-ILR-NIG-036")
 #'

@@ -20,7 +20,8 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of **forstringr** is to enable complex string manipulation in R. The package combines the power of stringr with other manipulation packages such as dplyr and tidyr. Just like in the stringr package, most functions in `forstringr` begins with `str_`.
+The string (or character) data type typically requires more manipulation to be helpful for data analysts. Thus, there is a need for a robust package that is up to the task. **forstringr** is a new package built on top of stringr to execute various string manipulations in R programming. The main aim of forstringr is to simplify string manipulation for R beginners. This package combines its power with the adaptability of other manipulation tools such as tidyr and dplyr. Like in the stringr package, most functions in `forstringr` begin with `str_`.
+
 
 ## Installation
 
@@ -88,12 +89,26 @@ If you want to split up a string into pieces and extract the results using a spe
 
 Given a character string, `S`, extract the element at a given position, `k`, from the result of splitting `S` by a given pattern, `m`. For example:
 
-```{r example5}
+```{r example5a}
 top_10_richest_nig <- c("Aliko Dangote", "Mike Adenuga", "Femi Otedola", "Arthur Eze", "Abdulsamad Rabiu", "Cletus Ibeto", "Orji Uzor Kalu", "ABC Orjiakor", "Jimoh Ibrahim", "Tony Elumelu")
 
 first_name <- str_split_extract(top_10_richest_nig, " ", 1)
 
 first_name
+```
+
+## `str_extract_part()`
+
+Extract strings before or after a given pattern. For example:
+
+```{r example5b}
+first_name <- str_extract_part(top_10_richest_nig, before = TRUE, pattern =  " ")
+
+first_name
+
+revenue <- c("$159", "$587", "$891", "$207", "$793")
+
+str_extract_part(revenue, before = FALSE, pattern = "$")
 ```
 
 ## `str_rm_whitespace_df()`

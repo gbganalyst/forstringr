@@ -1,6 +1,8 @@
-## Code to prepare `DATASET` dataset goes here
+## Code for preparing `DATASET` in the package
 
-richest_in_nigeria <- tibble::tribble(
+install.load::install_load(c("tidyverse", "googlesheets4"))
+
+richest_in_nigeria <- tribble(
   ~Rank,              ~Name,     ~`Net worth`, ~Age,                     ~`Source of Wealth`,
   1,    " Aliko Dangote",  "$14 Billion",  64,                    "  Cement and Sugar ",
   2,     "Mike Adenuga", "$7.9  Billion ",  68,     "Telecommunication,    Oil,   and Gas",
@@ -18,5 +20,7 @@ richest_in_nigeria <- tibble::tribble(
 usethis::use_data(richest_in_nigeria, overwrite = TRUE)
 
 
+community_data <- read_sheet("https://docs.google.com/spreadsheets/d/1FueVsiWSN3uft_EYZeuX1FxMsZ0_jz2IzkIbdN53g2c", sheet = "data4pkg", trim_ws = FALSE, col_types = "Dccccdcc")
 
 
+usethis::use_data(community_data, overwrite = TRUE)
