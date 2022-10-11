@@ -18,7 +18,6 @@
 #' str_left("Nigeria", n = 3)
 #' str_left(c("Female", "Male", "Male", "Female"))
 #'
-#'
 str_left <- function(string, n = 1) {
   substr(string, 1, n)
 }

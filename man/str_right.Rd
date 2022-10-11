@@ -22,7 +22,6 @@ str_right("Sale Price")
 
 str_right("Sale Price", n = 5)
 
-
 }
 \seealso{
 \code{\link[=str_left]{str_left()}} which extracts characters from the left and \code{\link[=str_mid]{str_mid()}} which returns a segment of character strings.

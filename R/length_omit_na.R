@@ -1,5 +1,5 @@
 #' Length of an object
-#'@description \code{length_omitna()} counts only non-missing elements of a vector.
+#' @description \code{length_omitna()} counts only non-missing elements of a vector.
 #'
 #' @param x Input vector. Either a vector, or something coercible to one.
 #'
@@ -11,13 +11,12 @@
 #'
 #' @examples
 #'
-#'ethnicity <- c("Hausa", NA, "Yoruba", "Igbo", NA, "Fulani", "Kanuri", "Others")
+#' ethnicity <- c("Hausa", NA, "Yoruba", "Igbo", NA, "Fulani", "Kanuri", "Others")
 #'
-#'length_omit_na(ethnicity)
+#' length_omit_na(ethnicity)
 #'
-#'length(ethnicity)
+#' length(ethnicity)
 #'
-
 length_omit_na <- function(x) {
   length(na.omit(x))
 }

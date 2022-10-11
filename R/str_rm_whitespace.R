@@ -17,5 +17,3 @@
 str_rm_whitespace_df <- function(df) {
   df %>% mutate(across(tidyselect::vars_select_helpers$where(is.character), stringr::str_squish))
 }
-
-

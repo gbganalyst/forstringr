@@ -7,8 +7,10 @@ Authors@R: c(
     person("Olubukunola", "Oyedele", , email = "olubukunola.oyedele@54gene.com", role = c("ctb")),
     person("Fatimo", "Adebanjo", , email = "adebanjofatimo2000@gmail.com", role = c("ctb")))
 Maintainer: Ezekiel Ogundepo <gbganalyst@gmail.com>
-Description: Convenience functions to make some common tasks with string
-    manipulation a bit easier.
+Description: The goal of forstringr is to enable complex string manipulation in R 
+    especially to those more familiar with LEFT(), RIGHT(), and MID() functions in 
+    Microsoft Excel. The package combines the power of stringr with other manipulation 
+    packages such as dplyr and tidyr.
 License: MIT + file LICENSE
 Encoding: UTF-8
 URL: https://github.com/gbganalyst/forstringr

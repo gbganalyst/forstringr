@@ -16,13 +16,14 @@
 #'
 #' @examples
 #'
-#' weekdays <- c("Monday_1", "Tuesday_2", "Wednesday_3", "Thursday_4",
-#'  "Friday_5", "Saturday_6", "Sunday_7")
+#' weekdays <- c(
+#'   "Monday_1", "Tuesday_2", "Wednesday_3", "Thursday_4",
+#'   "Friday_5", "Saturday_6", "Sunday_7"
+#' )
 #'
 #' str_extract_part(weekdays, before = TRUE, pattern = "_")
 #'
 #' str_extract_part(c("$159", "$587", "$897"), before = FALSE, pattern = "$")
-#'
 #'
 str_extract_part <- function(string, before = TRUE, pattern) {
   before <- before
@@ -43,17 +44,12 @@ str_extract_part <- function(string, before = TRUE, pattern) {
         regex_pattern <- stringr::str_glue("^.*(?={pattern})")
 
         stringr::str_extract(string = string, pattern = regex_pattern)
-
       } else if (before == FALSE) {
         regex_pattern <- stringr::str_glue("(?<={pattern}).*$")
 
         stringr::str_extract(string = string, pattern = regex_pattern)
       }
     },
-
     error = \(e) stop(stringr::str_glue("can't handle {pattern} pattern"))
   )
 }
-
-
-

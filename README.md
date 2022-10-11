@@ -13,7 +13,9 @@ top of stringr to execute various string manipulations in R programming.
 The main aim of forstringr is to simplify string manipulation for R
 beginners. This package combines its power with the adaptability of
 other manipulation tools such as tidyr and dplyr. Like in the stringr
-package, most functions in `forstringr` begin with `str_`.
+package, most functions in `forstringr` begin with `str_`. For a quick
+video tutorial, I gave a talk at Africa R users meetup, which you can
+find [here](https://r4africa.org/event/1sept2022).
 
 ## Installation
 
@@ -93,7 +95,7 @@ str_mid("Oyo Ibadan", 5, 6)
 
 If you want to split up a string into pieces and extract the results
 using a specific index position, then, you will use
-`str_split_extract()`. You can interpret it as interpret it as follows:
+`str_split_extract()`. You can interpret it as follows:
 
 Given a character string, `S`, extract the element at a given position,
 `k`, from the result of splitting `S` by a given pattern, `m`. For
