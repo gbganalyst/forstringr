@@ -4,6 +4,8 @@
 # forstringr <a><img src='man/figures/logo.png' align="right" height="138.5" /></a>
 
 <!-- badges: start -->
+
+[![R-CMD-check](https://github.com/gbganalyst/forstringr/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/gbganalyst/forstringr/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 The string (or character) data type typically requires more manipulation
