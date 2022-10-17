@@ -18,7 +18,7 @@ A data frame with \code{32} rows and \code{8} variables:
 }
 }
 \source{
-\href{https://linkedin.com/in/ezekiel-ogundepo}{Ezekiel} and \href{https://www.linkedin.com/in/oluokun-adewumi}{Esther} developed the Google form that was used to collect the data. By clicking the following link, you may also add to the data:
+\href{https://linkedin.com/in/gbganalyst}{Ezekiel} and \href{https://www.linkedin.com/in/oluokun-adewumi}{Esther} developed the Google form that was used to collect the data. By clicking the following link, you may also add to the data:
 
 \url{https://bit.ly/str_rm_whitespace_df_pkg}
 }
