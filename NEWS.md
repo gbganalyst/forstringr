@@ -1,4 +1,4 @@
-# What Is New in *forstringr*
+# What is New in *forstringr*
 
 ## 0.0.1 (2022-08-29) 
 
