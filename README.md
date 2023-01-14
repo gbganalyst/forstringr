@@ -44,7 +44,7 @@ ethnicity <- c("Hausa", NA, "Yoruba", "Ijaw", "Igbo", NA, "Ibibio", "Tiv", "Fula
 length(ethnicity) # Count all the observations, including the NAs.
 #> [1] 11
 
-length_omit_na(ethnicity) 
+length_omit_na(ethnicity)
 #> [1] 9
 ```
 
@@ -118,7 +118,7 @@ first_name
 Extract strings before or after a given pattern. For example:
 
 ``` r
-first_name <- str_extract_part(top_10_richest_nig, before = TRUE, pattern =  " ")
+first_name <- str_extract_part(top_10_richest_nig, before = TRUE, pattern = " ")
 
 first_name
 #>  [1] "Aliko"      "Mike"       "Femi"       "Arthur"     "Abdulsamad"
