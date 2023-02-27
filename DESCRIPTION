@@ -1,14 +1,14 @@
 Package: forstringr
-Title: String Manipulation Package For Those Familiar With Microsoft Excel
+Title: String Manipulation Package for Those Familiar with 'Microsoft Excel'
 Version: 0.0.1
 Authors@R: c(
     person("Ezekiel", "Ogundepo", , email = "gbganalyst@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0003-3974-2733")),
     person("Olubukunola", "Oyedele", , email = "olubukunola.oyedele@54gene.com", role = c("ctb")),
     person("Fatimo", "Adebanjo", , email = "adebanjofatimo2000@gmail.com", role = c("ctb")))
-Description: The goal of forstringr is to enable complex string manipulation in R 
+Description: The goal of 'forstringr' is to enable complex string manipulation in R 
     especially to those more familiar with LEFT(), RIGHT(), and MID() functions in 
-    Microsoft Excel. The package combines the power of stringr with other manipulation packages such as dplyr and tidyr.
+    Microsoft Excel. The package combines the power of 'stringr' with other manipulation packages such as 'dplyr' and 'tidyr'.
 Maintainer: Ezekiel Ogundepo <gbganalyst@gmail.com>
 Repository: GitHub
 License: MIT + file LICENSE

@@ -15,7 +15,7 @@ A data frame with \code{10} rows and \code{5} variables:
 }
 }
 \source{
-\url{https://rnn.ng/richest-men-in-nigeria}
+\url{https://rnn.ng/richest-men-in-nigeria/}
 }
 \usage{
 richest_in_nigeria

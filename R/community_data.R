@@ -15,8 +15,8 @@
 #' }
 #'
 #' @source
-#' [Ezekiel](https://linkedin.com/in/gbganalyst) and [Esther](https://www.linkedin.com/in/oluokun-adewumi) developed the Google form that was used to collect the data. By clicking the following link, you may also add to the data:
+#' [Ezekiel](https://www.linkedin.com/in/ezekiel-ogundepo/) and [Esther](https://www.linkedin.com/in/oluokun-adewumi) developed the Google form that was used to collect the data. By clicking the following link, you may also add to the data:
 #'
-#' \url{https://bit.ly/str_rm_whitespace_df_pkg}
+#' \url{https://docs.google.com/forms/d/e/1FAIpQLSeAhIBaze-pTHghyIKDZEx5kDuke0oYv0YPqg4gtGKijHSaUg/viewform}
 #'
 "community_data"

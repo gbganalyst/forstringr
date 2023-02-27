@@ -10,5 +10,5 @@
 #'   \item{Age}{the current age of billionaires}
 #'    \item{Source of Wealth}{the origin of the billionaires' entire body of wealth}
 #' }
-#' @source \url{https://rnn.ng/richest-men-in-nigeria}
+#' @source \url{https://rnn.ng/richest-men-in-nigeria/}
 "richest_in_nigeria"
