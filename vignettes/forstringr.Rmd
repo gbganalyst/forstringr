@@ -1,8 +1,8 @@
 ---
-title: "Manipulating string with forstringr package"
+title: "String Manipulation Package for Those Familiar with Microsoft Excel"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Manipulating string with forstringr package}
+  %\VignetteIndexEntry{String Manipulation Package for Those Familiar with Microsoft Excel}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -14,11 +14,18 @@ knitr::opts_chunk$set(
 )
 ```
 
-The goal of **forstringr** is to enable complex string manipulation in R. The package combines the power of stringr with other manipulation packages such as dplyr and tidyr. Just like in the stringr package, most functions in `forstringr` begins with `str_`.
+The goal of 'forstringr' is to enable complex string manipulation in R, especially for those more familiar with the `LEFT()`, `RIGHT()`, and `MID()` functions in Microsoft Excel. The package combines the power of 'stringr' with other manipulation packages such as 'dplyr' and 'tidyr'. Just like in the 'stringr' package, most functions in 'forstringr' begin with `str_`.
 
 ## Installation
 
-You can install the development version of `forstringr` from [GitHub](https://github.com/) with
+You can install `forstringr` package from [CRAN](https://cran.r-project.org/) with:
+
+```{r eval=FALSE}
+install.packages("forstringr")
+
+```
+
+or the development version from [GitHub](https://github.com/) with:
 
 ``` r
 if(!require("devtools")){

@@ -6,23 +6,34 @@
 <!-- badges: start -->
 
 [![R-CMD-check](https://github.com/gbganalyst/forstringr/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/gbganalyst/forstringr/actions/workflows/R-CMD-check.yaml)
+
+[![CRAN_Status_Badge](https://www.r-pkg.org/badges/version/forstringr)](https://cran.r-project.org/package=forstringr)
+
+[![metacran
+downloads](https://cranlogs.r-pkg.org/badges/grand-total/forstringr)](https://cran.r-project.org/package=forstringr)
 <!-- badges: end -->
 
 The string (or character) data type typically requires more manipulation
 to be helpful for data analysts. Thus, there is a need for a robust
 package that is up to the task. **forstringr** is a new package built on
-top of stringr to execute various string manipulations in R programming.
-The main aim of forstringr is to simplify string manipulation for R
-beginners. This package combines its power with the adaptability of
-other manipulation tools such as tidyr and dplyr. Like in the stringr
-package, most functions in `forstringr` begin with `str_`. For a quick
-video tutorial, I gave a talk at Africa R users meetup, which you can
-find [here](https://r4africa.org/event/1sept2022).
+top of ‘stringr’ to execute various string manipulations in R
+programming. The main aim of ‘forstringr’ is to simplify string
+manipulation for R beginners. This package combines its power with the
+adaptability of other manipulation tools such as tidyr and dplyr. Like
+in the stringr package, most functions in `forstringr` begin with
+`str_`. For a quick video tutorial, I gave a talk at Africa R users
+meetup, which you can find [here](https://r4africa.org/event/1sept2022).
 
 ## Installation
 
-You can install the development version of `forstringr` from
-[GitHub](https://github.com/) with
+You can install `forstringr` package from
+[CRAN](https://cran.r-project.org/) with:
+
+``` r
+install.packages("forstringr")
+```
+
+or the development version from [GitHub](https://github.com/) with
 
 ``` r
 if(!require("devtools")){

@@ -8,7 +8,8 @@ Authors@R: c(
     person("Fatimo", "Adebanjo", , email = "adebanjofatimo2000@gmail.com", role = c("ctb")))
 Description: The goal of 'forstringr' is to enable complex string manipulation in R 
     especially to those more familiar with LEFT(), RIGHT(), and MID() functions in 
-    Microsoft Excel. The package combines the power of 'stringr' with other manipulation packages such as 'dplyr' and 'tidyr'.
+    Microsoft Excel. The package combines the power of 'stringr' with other 
+    manipulation packages such as 'dplyr' and 'tidyr'.
 Maintainer: Ezekiel Ogundepo <gbganalyst@gmail.com>
 Repository: GitHub
 License: MIT + file LICENSE
