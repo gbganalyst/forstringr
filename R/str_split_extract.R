@@ -15,6 +15,13 @@
 #' str_split_extract(code, "-", 4)
 #'
 str_split_extract <- function(string, pattern, position) {
+  if (missing(string)) {
+    stop("argument 'string' is missing, with no default")
+  }
+  if (missing(pattern)) {
+    stop("argument 'pattern' is missing, with no default")
+  }
+
   if (missing(position)) {
     stop("Please specify the index of vector you want to extract.")
   } else {

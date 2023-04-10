@@ -17,5 +17,9 @@
 #' str_right("Sale Price", n = 5)
 #'
 str_right <- function(string, n = 1) {
-  substr(string, nchar(string) - (n - 1), nchar(string))
+  if (missing(string)) {
+    stop("argument 'string' is missing, with no default")
+  } else {
+    substr(string, nchar(string) - (n - 1), nchar(string))
+  }
 }

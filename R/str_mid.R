@@ -17,5 +17,17 @@
 #' str_mid("Oyo Ibadan", 5, 6)
 #'
 str_mid <- function(string, start, n) {
-  substr(x = string, start = start, stop = start + n - 1)
+  if (missing(string)) {
+    stop("argument 'string' is missing, with no default")
+  }
+  if (missing(start)) {
+    stop("argument 'start' is missing, with no default! Please provide the string location to start extracting from")
+  }
+  if (missing(n)) {
+    stop("argument 'n' is missing, with no default! Please provide the string location to extract to")
+  } else {
+    substr(x = string, start = start, stop = start + n - 1)
+  }
 }
+
+

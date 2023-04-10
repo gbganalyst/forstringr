@@ -15,5 +15,13 @@
 #' str_rm_whitespace_df(richest_in_nigeria)
 #'
 str_rm_whitespace_df <- function(df) {
-  df %>% mutate(across(tidyselect::vars_select_helpers$where(is.character), stringr::str_squish))
+  if (missing(df)) {
+    stop("argument 'df' is missing, with no default")
+  }
+
+  if (!is.data.frame(df)) {
+    stop("'df' must be a data frame object")
+  } else {
+    df %>% mutate(across(tidyselect::vars_select_helpers$where(is.character), stringr::str_squish))
+  }
 }

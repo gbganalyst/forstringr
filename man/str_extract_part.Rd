@@ -4,14 +4,14 @@
 \alias{str_extract_part}
 \title{Extract strings before or after a given pattern}
 \usage{
-str_extract_part(string, before = TRUE, pattern)
+str_extract_part(string, pattern, before = TRUE)
 }
 \arguments{
 \item{string}{A character vector.}
 
-\item{before}{The position in the string to extract from. If TRUE, the extract will occur before the pattern; if FALSE, it will happen after the pattern.}
-
 \item{pattern}{Pattern to look for.}
+
+\item{before}{The position in the string to extract from. If TRUE, the extract will occur before the pattern; if FALSE, it will happen after the pattern.}
 }
 \value{
 A subset of the input vector.
@@ -32,5 +32,5 @@ str_extract_part(c("$159", "$587", "$897"), before = FALSE, pattern = "$")
 
 }
 \seealso{
-\code{\link[=str_split_extract]{str_split_extract()}} which splits up a string into pieces and extract the results using a specific index position.
+\code{\link[=str_split_extract]{str_split_extract()}} which splits up a string into pieces and extracts the results using a specified index position.
 }
