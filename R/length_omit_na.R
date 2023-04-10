@@ -18,5 +18,9 @@
 #' length(ethnicity)
 #'
 length_omit_na <- function(x) {
-  length(na.omit(x))
+  if (missing(x)) {
+    stop("argument 'x' is missing, with no default")
+  } else {
+    length(na.omit(x))
+  }
 }

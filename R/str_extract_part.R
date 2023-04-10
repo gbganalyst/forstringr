@@ -10,7 +10,7 @@
 #' @return A subset of the input vector.
 #' @seealso
 #'
-#' [str_split_extract()] which splits up a string into pieces and extract the results using a specific index position.
+#' [str_split_extract()] which splits up a string into pieces and extracts the results using a specified index position.
 #'
 #' @export
 #'
@@ -25,11 +25,15 @@
 #'
 #' str_extract_part(c("$159", "$587", "$897"), before = FALSE, pattern = "$")
 #'
-str_extract_part <- function(string, before = TRUE, pattern) {
+str_extract_part <- function(string, pattern, before = TRUE) {
   before <- before
 
+  if (missing(string)) {
+    stop("argument 'string' is missing, with no default")
+  }
+
   if (missing(pattern)) {
-    stop("argument `pattern` is missing ")
+    stop("argument 'pattern' is missing, with no default")
   }
 
   esc_punt <- c("?", "$", "(", ")", "+", ".", "^", "*", "|", "[", "]", "_", "\\", "/", "s")

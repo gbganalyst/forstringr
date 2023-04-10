@@ -127,7 +127,7 @@ first_name
 Extract strings before or after a given pattern. For example:
 
 ``` r
-first_name <- str_extract_part(top_10_richest_nig, before = TRUE, pattern = " ")
+first_name <- str_extract_part(top_10_richest_nig,  pattern = " ", before = TRUE)
 
 first_name
 #>  [1] "Aliko"      "Mike"       "Femi"       "Arthur"     "Abdulsamad"
@@ -135,9 +135,35 @@ first_name
 
 revenue <- c("$159", "$587", "$891", "$207", "$793")
 
-str_extract_part(revenue, before = FALSE, pattern = "$")
+str_extract_part(revenue, pattern = "$", before = FALSE)
 #> [1] "159" "587" "891" "207" "793"
 ```
+
+## `str_englue()`
+
+You can dynamically label ggplot2 plots with the glue operators `[` or
+`{{}}` using `str_englue()`. For example, any value wrapped in `{ }`
+will be inserted into the string and you automatically inserts a given
+variable name using `{{ }}`.
+
+It is important to note that `str_englue()` must be used inside a
+function. `str_englue("{{ var }}")` defuses the argument `var` and
+transforms it to a string using the default name operation.
+
+``` r
+library(ggplot2)
+
+histogram_plot <- function(df, var, binwidth) {
+ df |>
+   ggplot(aes(x = {{ var }})) +
+   geom_histogram(binwidth = binwidth) +
+   labs(title = str_englue("A histogram of {{var}} with binwidth {binwidth}"))
+}
+
+iris |> histogram_plot(Sepal.Length, binwidth = 0.1)
+```
+
+<img src="man/figures/README-example_6-1.png" width="100%" />
 
 ## `str_rm_whitespace_df()`
 

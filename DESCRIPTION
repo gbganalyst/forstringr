@@ -1,6 +1,6 @@
 Package: forstringr
 Title: String Manipulation Package for Those Familiar with 'Microsoft Excel'
-Version: 0.0.1
+Version: 0.1.1
 Authors@R: c(
     person("Ezekiel", "Ogundepo", , email = "gbganalyst@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0003-3974-2733")),
@@ -25,6 +25,9 @@ Suggests:
 VignetteBuilder: knitr
 Imports: 
     dplyr,
+    ggplot2,
+    glue,
+    rlang,
     stringr,
     tidyselect
 Config/testthat/edition: 3

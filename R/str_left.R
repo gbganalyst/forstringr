@@ -19,5 +19,9 @@
 #' str_left(c("Female", "Male", "Male", "Female"))
 #'
 str_left <- function(string, n = 1) {
-  substr(string, 1, n)
+  if (missing(string)) {
+    stop("argument 'string' is missing, with no default")
+  } else {
+    substr(string, 1, n)
+  }
 }
