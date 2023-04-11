@@ -25,13 +25,18 @@ origin of a problem.}
 \code{str_englue()} helps you solve the labeling problem during plotting. For example, any value wrapped in \code{{ }} will be inserted into the string and it can also understands embracing, \code{{{ }}}, which automatically inserts a given variable name.
 }
 \examples{
+\donttest{
+library(ggplot2)
+
 histogram_plot <- function(df, var, binwidth) {
- df |>
-   ggplot(aes(x = {{ var }})) +
+   ggplot(df, aes(x = {{ var }})) +
    geom_histogram(binwidth = binwidth) +
    labs(title = str_englue("A histogram of {{var}} with binwidth {binwidth}"))
 }
-iris |> histogram_plot(Sepal.Length, binwidth = 0.1)
+
+histogram_plot(iris, Sepal.Length, binwidth = 0.1)
+}
+
 }
 \seealso{
 \code{\link[rlang:englue]{rlang::englue()}}

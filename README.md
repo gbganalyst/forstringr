@@ -11,6 +11,8 @@
 downloads](https://cranlogs.r-pkg.org/badges/grand-total/forstringr)](https://cran.r-project.org/package=forstringr)
 <!-- badges: end -->
 
+## Overview
+
 The string (or character) data type typically requires more manipulation
 to be helpful for data analysts. Thus, there is a need for a robust
 package that is up to the task. **forstringr** is a new package built on
@@ -40,6 +42,28 @@ if(!require("devtools")){
 
 devtools::install_github("gbganalyst/forstringr")
 ```
+
+## Usage
+
+This section provides a concise overview of the different functions
+available in the `forstringr` package. These functions serve various
+purposes and are designed to aid in string manipulation tasks.
+
+- [`length_omit_na()`](#length_omit_na)
+
+- [`str_left()`](#str_left)
+
+- [`str_right()`](#str_right)
+
+- [`str_mid()`](#str_mid)
+
+- [`str_split_extract()`](#str_split_extract)
+
+- [`str_extract_part()`](#str_extract_part)
+
+- [`str_englue()`](#str_englue)
+
+- [`str_rm_whitespace_df()`](#str-rm-whitespace-df)
 
 ## `length_omit_na()`
 
