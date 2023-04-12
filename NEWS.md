@@ -2,9 +2,11 @@
 
 ## 0.1.1 (2023-04-10) 
 
-- Added `str_englue()`, an alias of `rlang::englue()`.
+We are pleased to announce the release of version 0.1.1 of forstringr package. This update includes the following new features and improvements:
 
-- Added meaningful error messages for all the functions in the forstringr package.
+-  Added *str_englue()*. This function allows for easier string interpolation within curly braces for plot labelling in ggplot2. For example, any value wrapped in { } will be inserted into the string and it can also understand embracing, {{ }}, which automatically inserts a given variable name.
+
+-  Improved error handling by adding meaningful error messages for all functions within the forstringr package. This will make it easier for users to identify and troubleshoot issues that may arise during their use of the package.
 
 ## 0.0.1 (2022-08-29) 
 

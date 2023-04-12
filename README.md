@@ -165,7 +165,7 @@ str_extract_part(revenue, pattern = "$", before = FALSE)
 
 ## `str_englue()`
 
-You can dynamically label ggplot2 plots with the glue operators `[` or
+You can dynamically label ggplot2 plots with the glue operators `{}` or
 `{{}}` using `str_englue()`. For example, any value wrapped in `{ }`
 will be inserted into the string and you automatically inserts a given
 variable name using `{{ }}`.
