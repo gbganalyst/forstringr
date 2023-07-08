@@ -63,7 +63,7 @@ purposes and are designed to aid in string manipulation tasks.
 
 - [`str_englue()`](#str_englue)
 
-- [`str_rm_whitespace_df()`](#str-rm-whitespace-df)
+- [`str_rm_whitespace_df()`](#str_rm_whitespace_df)
 
 ## `length_omit_na()`
 

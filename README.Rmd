@@ -65,7 +65,7 @@ This section provides a concise overview of the different functions available in
 
 - [`str_englue()`](#str_englue)
 
-- [`str_rm_whitespace_df()`](#str-rm-whitespace-df)
+- [`str_rm_whitespace_df()`](#str_rm_whitespace_df)
 
 
 ## `length_omit_na()`
