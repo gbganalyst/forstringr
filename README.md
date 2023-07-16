@@ -51,6 +51,8 @@ purposes and are designed to aid in string manipulation tasks.
 
 - [`length_omit_na()`](#length_omit_na)
 
+- [`str_title_case()`](#str_title_case)
+
 - [`str_left()`](#str_left)
 
 - [`str_right()`](#str_right)
@@ -71,6 +73,7 @@ purposes and are designed to aid in string manipulation tasks.
 
 ``` r
 library(forstringr)
+#> Loading required package: stringr
 
 ethnicity <- c("Hausa", NA, "Yoruba", "Ijaw", "Igbo", NA, "Ibibio", "Tiv", "Fulani", "Kanuri", "Others")
 
@@ -79,6 +82,27 @@ length(ethnicity) # Count all the observations, including the NAs.
 
 length_omit_na(ethnicity)
 #> [1] 9
+```
+
+## `str_title_case()`
+
+`str_title_case()` converts string to title case, capitalizing only the
+first letter of each word while ignoring articles, prepositions, and
+conjunctions.
+
+Please note that `str_title_case()` is different from
+`stringr::str_to_title()` which converts to title case, where only the
+first letter of each word is capitalized.
+
+``` r
+
+words <- "the quick brown fox jumps over a lazy dog"
+
+str_title_case(words) # from forstringr package
+#> [1] "The Quick Brown Fox Jumps over a Lazy Dog"
+
+str_to_title(words) # from stringr package
+#> [1] "The Quick Brown Fox Jumps Over A Lazy Dog"
 ```
 
 ## `str_left()`

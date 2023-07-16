@@ -1,7 +1,6 @@
 #' Dynamic plot labels using glue operators
 #' @description
 #' `str_englue()` helps you solve the labeling problem during plotting. For example, any value wrapped in `{ }` will be inserted into the string and it can also understands embracing, `{{ }}`, which automatically inserts a given variable name.
-# Suppress R CMD check note for glue package (not use but imported for rlang)
 #'
 #' @inheritParams rlang::englue
 #' @importFrom glue glue

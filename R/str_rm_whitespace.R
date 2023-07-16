@@ -7,7 +7,6 @@
 #'
 #' @return A clean data frame with no leading or trailing spaces.
 #'
-#' @importFrom dplyr %>% mutate across
 #' @export
 #' @examples
 #' richest_in_nigeria

@@ -1,10 +1,16 @@
-# forstringr 1.0.0
+# What is New in *forstringr*?
 
-# What is New in *forstringr*
+## 1.0.0 (2023-07-17)
+
+We are pleased to announce the release of version 1.0.0 of `forstringr` package. This update includes the following new features and improvements:
+
+-  Added `str_title_case()`. This function converts string to title case, capitalizing only the first letter of each word while ignoring articles, prepositions, and conjunctions.
+
+-  Added package-level documentation. The user can now use `?forstringr::forstringr` for basic package-level documentation.
 
 ## 0.1.1 (2023-04-10) 
 
-We are pleased to announce the release of version 0.1.1 of forstringr package. This update includes the following new features and improvements:
+This update includes the following new features and improvements:
 
 -  Added *str_englue()*. This function allows for easier string interpolation within curly braces for plot labelling in ggplot2. For example, any value wrapped in { } will be inserted into the string and it can also understand embracing, {{ }}, which automatically inserts a given variable name.
 
