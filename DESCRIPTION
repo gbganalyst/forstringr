@@ -1,7 +1,7 @@
 Package: forstringr
 Title: String Manipulation Package for Those Familiar with 'Microsoft
     Excel'
-Version: 0.1.1
+Version: 1.0.0
 Authors@R: c(
     person("Ezekiel", "Ogundepo", , "gbganalyst@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0003-3974-2733")),
@@ -18,12 +18,13 @@ License: MIT + file LICENSE
 URL: https://github.com/gbganalyst/forstringr
 BugReports: https://github.com/gbganalyst/forstringr/issues
 Depends: 
-    R (>= 2.10)
+    R (>= 3.4.0),
+    stringr
 Imports: 
     dplyr,
     glue,
     rlang,
-    stringr,
+    stats,
     tidyselect
 Suggests: 
     ggplot2,
