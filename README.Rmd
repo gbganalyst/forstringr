@@ -79,7 +79,12 @@ library(forstringr)
 
 ethnicity <- c("Hausa", NA, "Yoruba", "Ijaw", "Igbo", NA, "Ibibio", "Tiv", "Fulani", "Kanuri", "Others")
 
-length(ethnicity) # Count all the observations, including the NAs.
+# count all the observations, including NAs.
+
+length(ethnicity) 
+
+
+# count all the observations, without NAs.
 
 length_omit_na(ethnicity)
 ```
@@ -171,13 +176,14 @@ It is important to note that `str_englue()` must be used inside a function. `str
 library(ggplot2)
 
 histogram_plot <- function(df, var, binwidth) {
- df |>
+ df %>%  
    ggplot(aes(x = {{ var }})) +
    geom_histogram(binwidth = binwidth) +
    labs(title = str_englue("A histogram of {{var}} with binwidth {binwidth}"))
 }
 
-iris |> histogram_plot(Sepal.Length, binwidth = 0.1)
+iris %>% 
+  histogram_plot(Sepal.Length, binwidth = 0.1)
 ```
 
 
@@ -186,12 +192,12 @@ iris |> histogram_plot(Sepal.Length, binwidth = 0.1)
 Extra spaces are accidentally entered when working with survey data, and problems can arise when evaluating such data because of extra spaces. Therefore, the function `str_rm_whitespace_df()` eliminates your data frame unnecessary leading, trailing, or other whitespaces.
 
 ```{r example 6a}
-# A dataframe with whitespaces
+# a dataframe with whitespaces
 
 richest_in_nigeria
 ```
 ```{r example6b}
-# A dataframe with no whitespaces
+# a dataframe with no whitespaces
 
 str_rm_whitespace_df(richest_in_nigeria)
 ```

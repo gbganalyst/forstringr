@@ -4,3 +4,4 @@ test_that("str_split_extract() split up a string into pieces and extract the res
     c("Ibadan", "Ikeja", "Ilorin")
   )
 })
+

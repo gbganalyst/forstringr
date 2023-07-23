@@ -77,8 +77,13 @@ library(forstringr)
 
 ethnicity <- c("Hausa", NA, "Yoruba", "Ijaw", "Igbo", NA, "Ibibio", "Tiv", "Fulani", "Kanuri", "Others")
 
-length(ethnicity) # Count all the observations, including the NAs.
+# count all the observations, including NAs.
+
+length(ethnicity) 
 #> [1] 11
+
+
+# count all the observations, without NAs.
 
 length_omit_na(ethnicity)
 #> [1] 9
@@ -202,13 +207,14 @@ transforms it to a string using the default name operation.
 library(ggplot2)
 
 histogram_plot <- function(df, var, binwidth) {
- df |>
+ df %>%  
    ggplot(aes(x = {{ var }})) +
    geom_histogram(binwidth = binwidth) +
    labs(title = str_englue("A histogram of {{var}} with binwidth {binwidth}"))
 }
 
-iris |> histogram_plot(Sepal.Length, binwidth = 0.1)
+iris %>% 
+  histogram_plot(Sepal.Length, binwidth = 0.1)
 ```
 
 <img src="man/figures/README-example_6-1.png" width="100%" />
@@ -221,7 +227,7 @@ Therefore, the function `str_rm_whitespace_df()` eliminates your data
 frame unnecessary leading, trailing, or other whitespaces.
 
 ``` r
-# A dataframe with whitespaces
+# a dataframe with whitespaces
 
 richest_in_nigeria
 #> # A tibble: 10 × 5
@@ -240,7 +246,7 @@ richest_in_nigeria
 ```
 
 ``` r
-# A dataframe with no whitespaces
+# a dataframe with no whitespaces
 
 str_rm_whitespace_df(richest_in_nigeria)
 #> # A tibble: 10 × 5

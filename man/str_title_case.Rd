@@ -11,7 +11,7 @@ str_title_case(string)
 coercible to one.}
 }
 \value{
-A character vector the same length as the string and in the title case.
+A character vector the same length as the string and in title case.
 }
 \description{
 \code{str_title_case()} converts string to title case, capitalizing only the first letter of each word while ignoring articles, prepositions, and conjunctions

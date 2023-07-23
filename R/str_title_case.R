@@ -10,7 +10,7 @@
 #' @inheritParams stringr::str_to_title
 #'
 #' @return
-#' A character vector the same length as the string and in the title case.
+#' A character vector the same length as the string and in title case.
 #'
 #' @export
 #'
