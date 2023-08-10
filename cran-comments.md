@@ -1,10 +1,11 @@
 ## New version
 
-This is a new version submission. In this version I have:
+This is a new version submission. In this version we:
 
-- Added `str_englue()`, an alias of `rlang::englue()`.
+-  created `str_title_case()`. This function converts string to title case, capitalizing only the first letter of each word while ignoring articles, prepositions, and conjunctions.
 
-- Added meaningful error messages for all the functions in the forstringr package 
+-  added package-level documentation. The user can now use `?forstringr::forstringr` for basic package-level documentation.
+
 
 ## R CMD check results
 0 errors | 0 warnings | 0 notes

@@ -1,6 +1,6 @@
 # What is New in *forstringr*?
 
-## 1.0.0 (2023-07-17)
+## 1.0.0 (2023-08-07)
 
 We are pleased to announce the release of version 1.0.0 of `forstringr` package. This update includes the following new features and improvements:
 
