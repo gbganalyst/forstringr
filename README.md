@@ -9,6 +9,8 @@
 [![CRAN_Status_Badge](https://www.r-pkg.org/badges/version/forstringr)](https://cran.r-project.org/package=forstringr)
 [![metacran
 downloads](https://cranlogs.r-pkg.org/badges/grand-total/forstringr)](https://cran.r-project.org/package=forstringr)
+[![Codecov test
+coverage](https://codecov.io/gh/gbganalyst/forstringr/branch/main/graph/badge.svg)](https://app.codecov.io/gh/gbganalyst/forstringr?branch=main)
 <!-- badges: end -->
 
 ## Overview
