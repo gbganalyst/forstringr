@@ -8,3 +8,6 @@
 ^CRAN-SUBMISSION$
 Rplot.png
 ^codecov\.yml$
+^_pkgdown\.yml$
+^docs$
+^pkgdown$

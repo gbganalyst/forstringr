@@ -14,6 +14,7 @@ The goal of 'forstringr' is to enable complex string manipulation in R especiall
 Useful links:
 \itemize{
   \item \url{https://github.com/gbganalyst/forstringr}
+  \item \url{https://gbganalyst.github.io/forstringr/}
   \item Report bugs at \url{https://github.com/gbganalyst/forstringr/issues}
 }
 

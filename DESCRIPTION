@@ -15,7 +15,7 @@ Description: The goal of 'forstringr' is to enable complex string
     the power of 'stringr' with other manipulation packages such as
     'dplyr' and 'tidyr'.
 License: MIT + file LICENSE
-URL: https://github.com/gbganalyst/forstringr
+URL: https://github.com/gbganalyst/forstringr, https://gbganalyst.github.io/forstringr/
 BugReports: https://github.com/gbganalyst/forstringr/issues
 Depends: 
     R (>= 3.4.0),

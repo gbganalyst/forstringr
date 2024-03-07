@@ -12,10 +12,11 @@ editor_options:
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
-  comment = "#>"
+  comment = "#>",
+  out.width = "100%"
 )
 ```
-
+  
 The goal of 'forstringr' is to enable complex string manipulation in R, especially for those more familiar with the `LEFT()`, `RIGHT()`, and `MID()` functions in Microsoft Excel. The package combines the power of 'stringr' with other manipulation packages such as 'dplyr' and 'tidyr'. Just like in the 'stringr' package, most functions in 'forstringr' begin with `str_`.
 
 ## Installation
