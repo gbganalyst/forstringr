@@ -24,7 +24,7 @@ knitr::opts_chunk$set(
 [![Codecov test coverage](https://codecov.io/gh/gbganalyst/forstringr/branch/main/graph/badge.svg)](https://app.codecov.io/gh/gbganalyst/forstringr?branch=main)
 <!-- badges: end -->
 
-## Overview
+## About the package
 
 The string (or character) data type typically requires more manipulation to be helpful for data analysts. Thus, there is a need for a robust package that is up to the task. **forstringr** is a new package built on top of 'stringr' to execute various string manipulations in R programming. The main aim of 'forstringr' is to simplify string manipulation for R beginners. This package combines its power with the adaptability of other manipulation tools such as tidyr and dplyr. Like in the stringr package, most functions in `forstringr` begin with `str_`. For a quick video tutorial, I gave a talk at Africa R users meetup, which you can find [here](https://r4africa.org/event/1sept2022).
 
@@ -50,158 +50,11 @@ devtools::install_github("gbganalyst/forstringr")
 
 ## Usage
 
-This section provides a concise overview of the different functions available in the `forstringr` package. These functions serve various purposes and are designed to aid in string manipulation tasks.
+Now that you have installed `forstringr` package, you can simply load it by using:
 
-- [`length_omit_na()`](#length_omit_na)
-
-- [`str_title_case()`](#str_title_case)
-
-- [`str_left()`](#str_left) 
-
-- [`str_right()`](#str_right) 
-
-- [`str_mid()`](#str_mid) 
-
-- [`str_split_extract()`](#str_split_extract) 
-
-- [`str_extract_part()`](#str_extract_part)
-
-- [`str_englue()`](#str_englue)
-
-- [`str_rm_whitespace_df()`](#str_rm_whitespace_df)
-
-
-## `length_omit_na()`
-
-`length_omitna()` counts only non-missing elements of a vector.
-
-```{r example1}
+```{r}
 library(forstringr)
-
-ethnicity <- c("Hausa", NA, "Yoruba", "Ijaw", "Igbo", NA, "Ibibio", "Tiv", "Fulani", "Kanuri", "Others")
-
-# count all the observations, including NAs.
-
-length(ethnicity) 
-
-
-# count all the observations, without NAs.
-
-length_omit_na(ethnicity)
 ```
 
-## `str_title_case()` 
-
-`str_title_case()` converts string to title case, capitalizing only the first letter of each word while ignoring articles, prepositions, and conjunctions.
-
-Please note that `str_title_case()` is different from `stringr::str_to_title()` which converts to title case, where only the first letter of each word is capitalized.
-
-```{r example1a}
-
-words <- "the quick brown fox jumps over a lazy dog"
-
-str_title_case(words) # from forstringr package
-
-str_to_title(words) # from stringr package
-```
-
-## `str_left()` 
-
-Given a character vector, `str_left()` returns the left side of a string. For examples:
-
-```{r example2}
-
-str_left("Nigeria")
-
-str_left("Nigeria", n = 3)
-
-str_left(c("Female", "Male", "Male", "Female"))
-```
-
-## `str_right()` 
-
-Given a character vector, `str_right()` returns the right side of a string. For examples:
-
-```{r example3}
-
-str_right("July 20, 2022", 4)
-
-str_right("Sale Price", n = 5)
-```
-
-## `str_mid()` 
-
-Like in Microsoft Excel, the `str_mid()`returns a specific number of characters from a text string, starting at the position you specify, based on the number of characters you select.
-
-```{r example4}
-str_mid("Super Eagle", 7, 5)
-
-str_mid("Oyo Ibadan", 5, 6)
-```
-
-## `str_split_extract()` 
-
-If you want to split up a string into pieces and extract the results using a specific index position, then, you will use `str_split_extract()`. You can interpret it as follows:
-
-Given a character string, `S`, extract the element at a given position, `k`, from the result of splitting `S` by a given pattern, `m`. For example:
-
-```{r example5a}
-top_10_richest_nig <- c("Aliko Dangote", "Mike Adenuga", "Femi Otedola", "Arthur Eze", "Abdulsamad Rabiu", "Cletus Ibeto", "Orji Uzor Kalu", "ABC Orjiakor", "Jimoh Ibrahim", "Tony Elumelu")
-
-first_name <- str_split_extract(top_10_richest_nig, " ", 1)
-
-first_name
-```
-
-## `str_extract_part()` 
-
-Extract strings before or after a given pattern. For example:
-
-```{r example5b}
-first_name <- str_extract_part(top_10_richest_nig,  pattern = " ", before = TRUE)
-
-first_name
-
-revenue <- c("$159", "$587", "$891", "$207", "$793")
-
-str_extract_part(revenue, pattern = "$", before = FALSE)
-```
-
-## `str_englue()` 
-
-You can dynamically label ggplot2 plots with the glue operators `{}` or `{{}}` using `str_englue()`. For example, any value wrapped in `{ }` will be inserted into the string and you automatically inserts a given variable name using `{{ }}`.
-
-It is important to note that `str_englue()` must be used inside a function. `str_englue("{{ var }}")` defuses the argument `var` and transforms it to a string using the default name operation.
-
-```{r example_6, warning=FALSE, fig.width= 5.6, fig.height= 5}
-library(ggplot2)
-
-histogram_plot <- function(df, var, binwidth) {
- df %>%  
-   ggplot(aes(x = {{ var }})) +
-   geom_histogram(binwidth = binwidth) +
-   labs(title = str_englue("A histogram of {{var}} with binwidth {binwidth}"))
-}
-
-iris %>% 
-  histogram_plot(Sepal.Length, binwidth = 0.1)
-```
-
-
-## `str_rm_whitespace_df()`
-
-Extra spaces are accidentally entered when working with survey data, and problems can arise when evaluating such data because of extra spaces. Therefore, the function `str_rm_whitespace_df()` eliminates your data frame unnecessary leading, trailing, or other whitespaces.
-
-```{r example 6a}
-# a dataframe with whitespaces
-
-richest_in_nigeria
-```
-```{r example6b}
-# a dataframe with no whitespaces
-
-str_rm_whitespace_df(richest_in_nigeria)
-```
-
-
+To get started with `forstringr`, read the [doc](https://gbganalyst.github.io/forstringr/articles/index.html).
 

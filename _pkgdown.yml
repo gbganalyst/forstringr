@@ -2,3 +2,57 @@ url: https://gbganalyst.github.io/forstringr/
 template:
   bootstrap: 5
 
+reference:
+
+- title: Package data
+  desc: >
+    Data accompanying forstringr package
+  contents:
+  - community_data
+  - richest_in_nigeria
+
+- title: Functions in forstingr
+  desc: >
+    Functions in forstringr package
+  contents:
+  - length_omit_na
+  - str_left
+  - str_right
+  - str_mid
+  - str_title_case
+  - str_rm_whitespace_df
+  - str_englue
+  - str_extract_part
+  - str_split_extract
+
+articles:
+- title: Get started
+  navbar: ~
+  contents:
+  - forstringr
+
+navbar:
+  title: "bulkreadr"
+  left:
+    - text: Home
+      icon: fa-home
+      href: index.html
+    - text: "Functions"
+      href: reference/index.html
+    - text: "Articles"
+      href: articles/index.html
+    - text: "News"
+      href: news/index.html
+    - text: "Other Packages"
+      menu:
+        - text: "bulkreadr"
+          href: https://gbganalyst.github.io/bulkreadr
+        - text: "ralger"
+          href: https://github.com/feddelegrand7/ralger
+  right:
+   - icon: fa-twitter
+     href: https://twitter.com/gbganalyst
+   - icon: fa-github
+     href: https://github.com/gbganalyst/bulkreadr
+   - icon: fa-globe
+     href: https://bit.ly/gbganalyst

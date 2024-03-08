@@ -38,6 +38,10 @@ if(!require("devtools")){
 devtools::install_github("gbganalyst/forstringr")
 ```
 
+## Functions in forstringr package
+
+This section provides a concise overview of the different functions available in the `forstringr` package. These functions serve various purposes and are designed to aid in string manipulation tasks.
+
 ## `length_omit_na()`
 
 `length_omitna()` counts only non-missing elements of a vector.
@@ -47,12 +51,32 @@ library(forstringr)
 
 ethnicity <- c("Hausa", NA, "Yoruba", "Ijaw", "Igbo", NA, "Ibibio", "Tiv", "Fulani", "Kanuri", "Others")
 
-length(ethnicity) # Count all the observations, including the NAs.
+# count all the observations, including NAs.
+
+length(ethnicity) 
+
+
+# count all the observations, without NAs.
 
 length_omit_na(ethnicity)
 ```
 
-## `str_left()`
+## `str_title_case()` 
+
+`str_title_case()` converts string to title case, capitalizing only the first letter of each word while ignoring articles, prepositions, and conjunctions.
+
+Please note that `str_title_case()` is different from `stringr::str_to_title()` which converts to title case, where only the first letter of each word is capitalized.
+
+```{r example1a}
+
+words <- "the quick brown fox jumps over a lazy dog"
+
+str_title_case(words) # from forstringr package
+
+str_to_title(words) # from stringr package
+```
+
+## `str_left()` 
 
 Given a character vector, `str_left()` returns the left side of a string. For examples:
 
@@ -65,7 +89,7 @@ str_left("Nigeria", n = 3)
 str_left(c("Female", "Male", "Male", "Female"))
 ```
 
-## `str_right()`
+## `str_right()` 
 
 Given a character vector, `str_right()` returns the right side of a string. For examples:
 
@@ -76,7 +100,7 @@ str_right("July 20, 2022", 4)
 str_right("Sale Price", n = 5)
 ```
 
-## `str_mid()`
+## `str_mid()` 
 
 Like in Microsoft Excel, the `str_mid()`returns a specific number of characters from a text string, starting at the position you specify, based on the number of characters you select.
 
@@ -86,9 +110,9 @@ str_mid("Super Eagle", 7, 5)
 str_mid("Oyo Ibadan", 5, 6)
 ```
 
-## `str_split_extract()`
+## `str_split_extract()` 
 
-If you want to split up a string into pieces and extract the results using a specific index position, then, you will use `str_split_extract()`. You can interpret it as interpret it as follows:
+If you want to split up a string into pieces and extract the results using a specific index position, then, you will use `str_split_extract()`. You can interpret it as follows:
 
 Given a character string, `S`, extract the element at a given position, `k`, from the result of splitting `S` by a given pattern, `m`. For example:
 
@@ -100,7 +124,7 @@ first_name <- str_split_extract(top_10_richest_nig, " ", 1)
 first_name
 ```
 
-## `str_extract_part()`
+## `str_extract_part()` 
 
 Extract strings before or after a given pattern. For example:
 
@@ -114,36 +138,41 @@ revenue <- c("$159", "$587", "$891", "$207", "$793")
 str_extract_part(revenue, pattern = "$", before = FALSE)
 ```
 
+## `str_englue()` 
 
-## `str_englue()`
+You can dynamically label ggplot2 plots with the glue operators `{}` or `{{}}` using `str_englue()`. For example, any value wrapped in `{ }` will be inserted into the string and you automatically inserts a given variable name using `{{ }}`.
 
-You can dynamically label ggplot2 plots with the glue operators `{}` or `{{}}` using `str_englue()`. This function allows for easier string interpolation within curly braces for plot labelling in ggplot2. For example, any value wrapped in `{ }` will be inserted into the string and it can also understand embracing, `{{ }}`, which automatically inserts a given variable name.
+It is important to note that `str_englue()` must be used inside a function. `str_englue("{{ var }}")` defuses the argument `var` and transforms it to a string using the default name operation.
 
-
-```{r example 6, warning=FALSE, fig.width= 5.6, fig.height= 5}
+```{r example_6, warning=FALSE, fig.width= 5.6, fig.height= 5}
 library(ggplot2)
 
 histogram_plot <- function(df, var, binwidth) {
- df |>
+ df %>%  
    ggplot(aes(x = {{ var }})) +
    geom_histogram(binwidth = binwidth) +
    labs(title = str_englue("A histogram of {{var}} with binwidth {binwidth}"))
 }
 
-iris |> histogram_plot(Sepal.Length, binwidth = 0.1)
+iris %>% 
+  histogram_plot(Sepal.Length, binwidth = 0.1)
 ```
+
 
 ## `str_rm_whitespace_df()`
 
 Extra spaces are accidentally entered when working with survey data, and problems can arise when evaluating such data because of extra spaces. Therefore, the function `str_rm_whitespace_df()` eliminates your data frame unnecessary leading, trailing, or other whitespaces.
 
 ```{r example 6a}
-# A dataframe with whitespaces
+# a dataframe with whitespaces
 
 richest_in_nigeria
 ```
 ```{r example6b}
-# A dataframe with no whitespaces
+# a dataframe with no whitespaces
 
 str_rm_whitespace_df(richest_in_nigeria)
 ```
+
+
+
