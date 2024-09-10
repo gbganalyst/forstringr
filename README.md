@@ -23,12 +23,12 @@ programming. The main aim of ‘forstringr’ is to simplify string
 manipulation for R beginners. This package combines its power with the
 adaptability of other manipulation tools such as tidyr and dplyr. Like
 in the stringr package, most functions in `forstringr` begin with
-`str_`. For a quick video tutorial, I gave a talk at Africa R users
+`str_`. For a quick video tutorial, I gave a talk at the Africa R users
 meetup, which you can find [here](https://r4africa.org/event/1sept2022).
 
 ## Installation
 
-You can install `forstringr` package from
+You can install the `forstringr` package from
 [CRAN](https://cran.r-project.org/) with:
 
 ``` r
@@ -52,7 +52,6 @@ by using:
 
 ``` r
 library(forstringr)
-#> Loading required package: stringr
 ```
 
 To get started with `forstringr`, read the
