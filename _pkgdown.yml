@@ -11,7 +11,7 @@ reference:
   - community_data
   - richest_in_nigeria
 
-- title: Functions in forstingr
+- title: Functions in forstingr package
   desc: >
     Functions in forstringr package
   contents:
@@ -48,11 +48,11 @@ navbar:
         - text: "bulkreadr"
           href: https://gbganalyst.github.io/bulkreadr
         - text: "ralger"
-          href: https://github.com/feddelegrand7/ralger
+          href: https://feddelegrand7.github.io/ralger
   right:
    - icon: fa-twitter
      href: https://twitter.com/gbganalyst
    - icon: fa-github
      href: https://github.com/gbganalyst/forstringr
    - icon: fa-globe
-     href: https://bit.ly/gbganalyst
+     href: https://gbganalyst.github.io
