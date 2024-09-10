@@ -1,66 +1,24 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://gbganalyst.github.io/forstringr/404.html</loc>
-  </url>
-  <url>
-    <loc>https://gbganalyst.github.io/forstringr/LICENSE-text.html</loc>
-  </url>
-  <url>
-    <loc>https://gbganalyst.github.io/forstringr/LICENSE.html</loc>
-  </url>
-  <url>
-    <loc>https://gbganalyst.github.io/forstringr/articles/forstringr.html</loc>
-  </url>
-  <url>
-    <loc>https://gbganalyst.github.io/forstringr/articles/index.html</loc>
-  </url>
-  <url>
-    <loc>https://gbganalyst.github.io/forstringr/authors.html</loc>
-  </url>
-  <url>
-    <loc>https://gbganalyst.github.io/forstringr/index.html</loc>
-  </url>
-  <url>
-    <loc>https://gbganalyst.github.io/forstringr/news/index.html</loc>
-  </url>
-  <url>
-    <loc>https://gbganalyst.github.io/forstringr/reference/community_data.html</loc>
-  </url>
-  <url>
-    <loc>https://gbganalyst.github.io/forstringr/reference/forstringr-package.html</loc>
-  </url>
-  <url>
-    <loc>https://gbganalyst.github.io/forstringr/reference/index.html</loc>
-  </url>
-  <url>
-    <loc>https://gbganalyst.github.io/forstringr/reference/length_omit_na.html</loc>
-  </url>
-  <url>
-    <loc>https://gbganalyst.github.io/forstringr/reference/richest_in_nigeria.html</loc>
-  </url>
-  <url>
-    <loc>https://gbganalyst.github.io/forstringr/reference/str_englue.html</loc>
-  </url>
-  <url>
-    <loc>https://gbganalyst.github.io/forstringr/reference/str_extract_part.html</loc>
-  </url>
-  <url>
-    <loc>https://gbganalyst.github.io/forstringr/reference/str_left.html</loc>
-  </url>
-  <url>
-    <loc>https://gbganalyst.github.io/forstringr/reference/str_mid.html</loc>
-  </url>
-  <url>
-    <loc>https://gbganalyst.github.io/forstringr/reference/str_right.html</loc>
-  </url>
-  <url>
-    <loc>https://gbganalyst.github.io/forstringr/reference/str_rm_whitespace_df.html</loc>
-  </url>
-  <url>
-    <loc>https://gbganalyst.github.io/forstringr/reference/str_split_extract.html</loc>
-  </url>
-  <url>
-    <loc>https://gbganalyst.github.io/forstringr/reference/str_title_case.html</loc>
-  </url>
+<urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
+<url><loc>https://gbganalyst.github.io/forstringr/404.html</loc></url>
+<url><loc>https://gbganalyst.github.io/forstringr/LICENSE-text.html</loc></url>
+<url><loc>https://gbganalyst.github.io/forstringr/LICENSE.html</loc></url>
+<url><loc>https://gbganalyst.github.io/forstringr/articles/forstringr.html</loc></url>
+<url><loc>https://gbganalyst.github.io/forstringr/articles/index.html</loc></url>
+<url><loc>https://gbganalyst.github.io/forstringr/authors.html</loc></url>
+<url><loc>https://gbganalyst.github.io/forstringr/index.html</loc></url>
+<url><loc>https://gbganalyst.github.io/forstringr/news/index.html</loc></url>
+<url><loc>https://gbganalyst.github.io/forstringr/reference/community_data.html</loc></url>
+<url><loc>https://gbganalyst.github.io/forstringr/reference/forstringr-package.html</loc></url>
+<url><loc>https://gbganalyst.github.io/forstringr/reference/index.html</loc></url>
+<url><loc>https://gbganalyst.github.io/forstringr/reference/length_omit_na.html</loc></url>
+<url><loc>https://gbganalyst.github.io/forstringr/reference/richest_in_nigeria.html</loc></url>
+<url><loc>https://gbganalyst.github.io/forstringr/reference/str_englue.html</loc></url>
+<url><loc>https://gbganalyst.github.io/forstringr/reference/str_extract_part.html</loc></url>
+<url><loc>https://gbganalyst.github.io/forstringr/reference/str_left.html</loc></url>
+<url><loc>https://gbganalyst.github.io/forstringr/reference/str_mid.html</loc></url>
+<url><loc>https://gbganalyst.github.io/forstringr/reference/str_right.html</loc></url>
+<url><loc>https://gbganalyst.github.io/forstringr/reference/str_rm_whitespace_df.html</loc></url>
+<url><loc>https://gbganalyst.github.io/forstringr/reference/str_split_extract.html</loc></url>
+<url><loc>https://gbganalyst.github.io/forstringr/reference/str_title_case.html</loc></url>
 </urlset>
+
